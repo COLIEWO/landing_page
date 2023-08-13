@@ -1,15 +1,26 @@
-* {
-    margin: 1cm;
-    padding: 0;
-    box-sizing: border-box;
+.one1, .two2, .three3, .four4 {
+    padding-left: 7cm;
+    padding-right: 7cm;
+    padding-bottom: 70px;
+    padding-top: 70px ;
 }
 
-.customer, .bolden {
+.customer {
     font-weight: bold;
+    text-align: end;
 }
 
-.one1, .five5 {
+.one1 {
     background-color: #1f2937;
+    padding-top: 20px;
+}
+
+.five5 {
+    background-color: #1f2937;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #F9FAF8;
 }
 
 .bold {
@@ -25,6 +36,8 @@
 .links {
     font-size: 18px;
     color: #E5E7EB;
+    display: flex;
+    align-content: space-around;
 }
 
 .logo {
@@ -34,23 +47,29 @@
 
 .four4 {
     background-color: #3883F6;
+    padding: 20px;
 }
 
 .signup {
     background-color: #3883F6;
-    height: auto;
-    width: 20%;
+    height: 1cm;
+    width: 3cm;
+    border-radius: 0.2cm;
+    border-color: #F9FAF8;
+    color: white;
 }
 
 .header2 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+    text-align: center;
 }
 
 .three3 {
     background-color: #E5E7EB;
 }
+
  .quote {
     font-size: 36px;
     color: #1F2937;
@@ -61,23 +80,56 @@
 .header1 {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
 }
 
 .links {
-    display: flex;
-    justify-content: flex-end;
+    gap: 1cm;
 }
 
 .first {
-    display: flex;
+    display: flex;  
 }
 
-.img {
-    height: auto;
-    width: 70%;
+.imag {
+    height: 5cm;
+    width: 25cm;
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.img1, .img2, .img3, .img4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 0.5cm; 
+    border: 3px solid #3883F6;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.four4 {
+    margin-top: 1cm;
+    margin-left: 7cm;
+    margin-right: 7cm;
+    margin-bottom: 1cm;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 3cm;
+    padding-right: 3cm;
+}
+
+.bolden {
+    font-weight: bold;
+}
+
+
+
 
