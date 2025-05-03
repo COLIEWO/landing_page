@@ -1,0 +1,210 @@
+/* Variables */
+:root {
+    --primary: #a72d24;
+    --secondary: #673ab7;
+    --bg-light: #f3f3f3;
+    --text-dark: #333;
+    --text-light: #fff;
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+  }
+  a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+  }
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--text-light);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+  header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  /* Social Links */
+  .social-links {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .social-links a {
+    margin: 0 15px;
+    font-size: 2.2rem;
+    color: var(--secondary);
+  }
+  .social-links a:hover {
+    color: var(--text-light);
+  }
+  .social-links i {
+    /* ensure the correct FA font is used */
+    font-family: "Font Awesome 6 Brands";
+    display: inline-block;       /* make sure it isn’t collapsed */
+  }
+  
+  
+  /* Sections */
+  section {
+    background-color: var(--text-light);
+    margin-bottom: 40px;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  section:nth-child(even) {
+    background-color: var(--bg-light);
+  }
+  section h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary);
+  }
+  ul {
+    list-style: disc;
+    margin: 20px 0;
+    padding-left: 40px;
+  }
+  
+  /* Job items */
+  .job-item {
+    margin-bottom: 20px;
+  }
+  .job-item h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--secondary);
+  }
+  .job-item span {
+    display: block;
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Passions */
+  #passions p {
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form label {
+    margin: 15px 0 5px;
+    font-weight: bold;
+  }
+  form input,
+  form textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid var(--bg-light);
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+  }
+  form button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  form button:hover {
+    background-color: var(--secondary);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+    color: #777;
+    background-color: var(--text-light);
+  }
+
+/* Testimonials Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: var(--text-light);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  .slide p {
+    font-style: italic;
+    margin: 0 0 10px;
+  }
+  .slide span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: #555;
+  }
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary);
+    cursor: pointer;
+    padding: 8px;
+  }
+  .prev { left: 10px; }
+  .next { right: 10px; }
+  .prev:hover, .next:hover {
+    color: var(--secondary);
+  }
+  
+  
